@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA2BC0BA2A1299D6001F7052 /* EarthquakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2BC0B92A1299D6001F7052 /* EarthquakeView.swift */; };
+		EA41BBA72A13E46100F5BB61 /* DetailMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA41BBA62A13E46100F5BB61 /* DetailMap.swift */; };
+		EAA3DA112A13B2DA00C44695 /* ComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3DA102A13B2DA00C44695 /* ComponentView.swift */; };
 		EABF9D472A120EBB00F2CDA8 /* ISpecialiseringsopgaveMBKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABF9D462A120EBB00F2CDA8 /* ISpecialiseringsopgaveMBKApp.swift */; };
 		EABF9D492A120EBB00F2CDA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABF9D482A120EBB00F2CDA8 /* ContentView.swift */; };
 		EABF9D4B2A120EBC00F2CDA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EABF9D4A2A120EBC00F2CDA8 /* Assets.xcassets */; };
 		EABF9D4E2A120EBC00F2CDA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EABF9D4D2A120EBC00F2CDA8 /* Preview Assets.xcassets */; };
+		EABF9D562A1217E900F2CDA8 /* Earthquakes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABF9D552A1217E900F2CDA8 /* Earthquakes.swift */; };
+		EABF9D5B2A121B2500F2CDA8 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABF9D5A2A121B2500F2CDA8 /* NetworkService.swift */; };
+		EABF9D5D2A121B6300F2CDA8 /* StateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABF9D5C2A121B6300F2CDA8 /* StateController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA2BC0B92A1299D6001F7052 /* EarthquakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeView.swift; sourceTree = "<group>"; };
+		EA41BBA62A13E46100F5BB61 /* DetailMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMap.swift; sourceTree = "<group>"; };
+		EAA3DA102A13B2DA00C44695 /* ComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentView.swift; sourceTree = "<group>"; };
 		EABF9D432A120EBB00F2CDA8 /* ISpecialiseringsopgaveMBK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISpecialiseringsopgaveMBK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EABF9D462A120EBB00F2CDA8 /* ISpecialiseringsopgaveMBKApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISpecialiseringsopgaveMBKApp.swift; sourceTree = "<group>"; };
 		EABF9D482A120EBB00F2CDA8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EABF9D4A2A120EBC00F2CDA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EABF9D4D2A120EBC00F2CDA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EABF9D552A1217E900F2CDA8 /* Earthquakes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Earthquakes.swift; sourceTree = "<group>"; };
+		EABF9D5A2A121B2500F2CDA8 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		EABF9D5C2A121B6300F2CDA8 /* StateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +63,13 @@
 		EABF9D452A120EBB00F2CDA8 /* ISpecialiseringsopgaveMBK */ = {
 			isa = PBXGroup;
 			children = (
+				EABF9D5A2A121B2500F2CDA8 /* NetworkService.swift */,
+				EABF9D572A121A4700F2CDA8 /* Views */,
+				EABF9D542A120F3C00F2CDA8 /* Model */,
 				EABF9D462A120EBB00F2CDA8 /* ISpecialiseringsopgaveMBKApp.swift */,
-				EABF9D482A120EBB00F2CDA8 /* ContentView.swift */,
 				EABF9D4A2A120EBC00F2CDA8 /* Assets.xcassets */,
 				EABF9D4C2A120EBC00F2CDA8 /* Preview Content */,
+				EABF9D5C2A121B6300F2CDA8 /* StateController.swift */,
 			);
 			path = ISpecialiseringsopgaveMBK;
 			sourceTree = "<group>";
@@ -65,6 +80,25 @@
 				EABF9D4D2A120EBC00F2CDA8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EABF9D542A120F3C00F2CDA8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EABF9D552A1217E900F2CDA8 /* Earthquakes.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EABF9D572A121A4700F2CDA8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EABF9D482A120EBB00F2CDA8 /* ContentView.swift */,
+				EA2BC0B92A1299D6001F7052 /* EarthquakeView.swift */,
+				EAA3DA102A13B2DA00C44695 /* ComponentView.swift */,
+				EA41BBA62A13E46100F5BB61 /* DetailMap.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +171,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EABF9D5B2A121B2500F2CDA8 /* NetworkService.swift in Sources */,
+				EABF9D5D2A121B6300F2CDA8 /* StateController.swift in Sources */,
 				EABF9D492A120EBB00F2CDA8 /* ContentView.swift in Sources */,
+				EA41BBA72A13E46100F5BB61 /* DetailMap.swift in Sources */,
+				EAA3DA112A13B2DA00C44695 /* ComponentView.swift in Sources */,
+				EA2BC0BA2A1299D6001F7052 /* EarthquakeView.swift in Sources */,
 				EABF9D472A120EBB00F2CDA8 /* ISpecialiseringsopgaveMBKApp.swift in Sources */,
+				EABF9D562A1217E900F2CDA8 /* Earthquakes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

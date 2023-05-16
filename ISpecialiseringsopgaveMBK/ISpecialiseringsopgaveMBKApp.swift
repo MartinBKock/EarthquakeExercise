@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct ISpecialiseringsopgaveMBKApp: App {
+    @StateObject var stateController = StateController()
+   
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(stateController)
         }
     }
 }
