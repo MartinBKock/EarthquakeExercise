@@ -23,7 +23,7 @@ struct ComponentView: View {
                         .foregroundColor(Color.yellow)
                         .frame(width: 340, height: 100)
                     
-                    HStack(alignment: .top) { // Set alignment to top to align all views at the top
+                    HStack(alignment: .top) {
                         VStack {
                         
                             
@@ -56,8 +56,6 @@ struct ComponentView: View {
                             
                         }
                         
-                        //.frame(minWidth: 0, maxWidth: .infinity, alignment: .leading) // Take up remaining space
-                        
                         VStack(alignment: .leading) {
                             Text(time.description)
                             
@@ -67,8 +65,8 @@ struct ComponentView: View {
                                 .font(.headline)
                                 .dynamicTypeSize(.small)
                         }
-                        .frame(width: 200,alignment: .leading)
-                        .offset(x: 10)
+                        .frame(width: 190,alignment: .leading)
+                       // .offset(x: 10)
                         
                      
                     }
@@ -77,9 +75,9 @@ struct ComponentView: View {
                             Image(systemName: "star")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 30, height: 30)
+                                .frame(width: 25, height: 25)
                                 
-                                .offset(x: 150, y: -30)
+                                .offset(x: 155, y: -35)
                                 
                         }
                     }

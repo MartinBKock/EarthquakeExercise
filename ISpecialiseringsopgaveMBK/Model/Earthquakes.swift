@@ -17,7 +17,7 @@ struct Earthquakes: Codable {
 }
 
 // MARK: - Feature
-struct Feature: Codable, Identifiable {
+struct Feature: Codable, Identifiable, Hashable {
     let type: String
     let properties: Properties
     let geometry: Geometry
@@ -26,18 +26,18 @@ struct Feature: Codable, Identifiable {
 }
 
 // MARK: - Geometry
-struct Geometry: Codable {
+struct Geometry: Codable, Hashable {
     let type: GeometryType
     let coordinates: [Double]
 }
 
-enum GeometryType: String, Codable {
+enum GeometryType: String, Codable , Hashable {
     case point = "Point"
     case feature = "Feature"
 }
 
 // MARK: - Properties
-struct Properties: Codable {
+struct Properties: Codable, Hashable {
     let mag: Double
     let place: String
     let time: Date
@@ -63,7 +63,7 @@ struct Properties: Codable {
 }
 
 // MARK: - Metadata
-struct Metadata: Codable {
+struct Metadata: Codable, Hashable {
     let generated: Int
     let url: String
     let title: String
